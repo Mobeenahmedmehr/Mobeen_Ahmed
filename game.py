@@ -1,4 +1,5 @@
 name=str(input("What is your name ?"))
+list=[]
 x=int(input("Enter your first favorite number:"))
 y=int(input("Enter your second favorite number:"))
 z=int(input("Enter your third favorite number:"))
@@ -7,20 +8,24 @@ if x%2==0:
     print(f"the number {x} is even")
 else:
     print(f"the number {x} is odd")
+list.append(x)
 if y%2==0:
     print(f"the number {y} is even")
 else:
     print(f"the number {y} is odd")
+list.append(y)
 if z%2==0:
     print(f"the number {z} is even")
 else:
     print(f"the number {z} is odd")
+list.append(z)
+print(list)
 square_x=x**2
-print(f"The number {x} and its square{x,square_x}")
+print((f"The number {x} and its square"),(tuple({x,square_x})))
 square_y=y**2
-print(f"The number {y} and its square{y,square_y}")
+print((f"The number {y} and its square"),(tuple({y,square_y})))
 square_z=z**2
-print(f"The number {z} and its square{z,square_z}")
+print((f"The number {z} and its square"),(tuple({z,square_z})))
 sum=x+y+z
 print(f"Amazing! The sum of your favorite numbers is:{sum}")
 is_prime=True
