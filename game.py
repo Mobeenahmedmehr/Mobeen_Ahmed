@@ -27,7 +27,7 @@ is_prime=True
 if sum<=1:
     is_prime=False
 for i in range(2,sum):
-    if sum % x == 0:
+    if sum % i == 0:
             is_prime=False
 if is_prime:
     print(f"Wow, {sum} is a prime number!")
